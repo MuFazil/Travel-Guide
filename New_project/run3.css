@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#VideoPart {
+    position: relative;
+    display: cover;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+body {
+    font: 'Montserrat', sans-serif;
+}
+
+.header__banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("Images/bg1.jpg");
+    padding: 3mm;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: ghostwhite;
+    padding: bottom 10px;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.navigation {
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+    position: relative;
+
+}
+
+
+
+
+.navigation .navigation__logo {
+    width: 60px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.guide__profile {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.pic {
+    height: 3cm;
+    width: 3cm;
+    border-radius: 3cm;
+    border-width: 1mm;
+    border-style: double;
+    margin: 3mm;
+    border-color: aliceblue;
+}
+
+.guide_profile .guide_profile--img {
+    width: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    float: right;
+}
+
+.half__splitter__button {
+    padding: 8px 5px;
+    width: 200px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font: 'Montserrat', sans-serif;
+    float: right
+
+}
+
+
+
+
+.form__button
+{
+    padding: 8px 5px;
+    width: 200px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font: 'Montserrat', sans-serif;
+    float: right
+}
+.half__splitter {
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: auto;
+}
+
+.button__now {
+    padding:8px 5px ;
+    width:150px;
+    background: transparent;
+    outline:none;
+    border:2px solid #fff;
+    border-radius :20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:bold;
+    cursor:pointer;
+    font:'Montserrat' ,sans-serif; 
+    text-decoration:none;
+}
+
+@media (max-width: 880px) {
+    .readvalue {
+        padding-top: 20px;
+        width: 50%;
+        height: 200vh;
+        background: rgba(86, 86, 86, 0.3);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        padding: 3mm;
+    }
+
+    .pic {
+        height: 2cm;
+        width: 2cm;
+        border-radius: 2cm;
+        border-width: 1mm;
+        border-style: double;
+        margin: 3mm;
+        border-color: aliceblue;
+        padding-top: 1mm;
+
+    }
+
+    .header__banner {
+        width: 100%;
+        height: 200vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-image: url("Images/bg1.jpg");
+
+    }
+
+    .half__splitter {
+        width: 50%;
+        height: 200vh;
+        background: rgba(86, 86, 86, 0.3);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .button__now {
+        padding: 8px 5px;
+        width: 90px;
+        background: transparent;
+        outline: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        font: 'Montserrat', sans-serif;
+        float: right;
+    }
+}
+
+.readvalue {
+    width: 100%;
+    color: white;
+    height: 100vh;
+    position: relative;
+    right: 0%;
+    padding-left: 3mm;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.readvalue h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.readvalue p {
+    color: #f0eef1;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 18px;
+
+}
+
+.readvalue input {
+    width: 50%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.parent_card_image {
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2.5%;
+    transition: transform 450ms;
+}
+
+.parent_card_images {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.parent_card_image:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.parent_card_images::-webkit-scrollbar {
+    display: none;
+}
+
+.parent_card_large {
+    max-height: 250px;
+}
+
+.parent_card_large:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.parent__card {
+    color: black;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.container--fade
+{
+    margin-top: 5px;
+    height:3.7rem;
+    background-image: linear-gradient(180deg , transparent ,rgba(255,255,255,0.61),#fff);
+}
+
+.header__banner--fade
+{
+    margin-top: 5px;
+    height:3.7rem;
+    background-image: linear-gradient(180deg , transparent ,rgba(255,255,255,0.61),#fff);
+}
+
+
+.Task
+{
+    width : 80%;
+    margin :auto ;
+    text-align :center;
+    padding-top :100px ;
+}
+
+h1{
+    font-size :36px;
+    font-weight :600;
+}
+p
+{
+    color :#777 ;
+    font-size :14px;
+    font-weight :300;
+    line-height :22px;
+    padding :10px ; 
+}
+
+.Columns
+{
+    margin-top: 5%;
+    display : flex ;
+    justify-content: space-between;
+}
+
+.Column
+{
+    flex-basis : 31% ;
+    background: #fff3f3;
+    border-radius: 10px ;
+    margin-bottom: 5%;
+    padding :20px 12px ;
+    box-sizing :border-box;
+    transition: 0.5s;
+}
+h3
+{
+    text-align :center;
+    font-weight :600 ;
+    margin : 10px 0;
+}
+
+.Column:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px)
+{
+    .Columns
+    {
+        flex-direction :column;
+    }
+}
+
+.parent__card h2
+{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}

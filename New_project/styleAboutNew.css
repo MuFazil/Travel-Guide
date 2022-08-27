@@ -1,0 +1,49 @@
+/* About page CSS */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Radio+Canada:wght@600&family=Tapestry&display=swap');
+
+.wrapper {
+    color: white;
+}
+
+h2 {
+    margin-top: 5vh;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 2.5rem;
+    color: gray;
+}
+
+p {
+    margin-top: 12vh;
+    position: relative;
+}
+
+#f2,
+#f4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+#f1,
+#f3 {
+    font-size: 3rem;
+    font-family: 'Tapestry', cursive;
+    text-transform: uppercase;
+}
+
+i {
+    margin: 80% 50%;
+}
+
+#instaLogo {
+    opacity: 1;
+    margin-left: 43vw;
+}
+
+#instalogo:hover {
+    opacity: 0.75;
+    transform: scale(2);
+
+}

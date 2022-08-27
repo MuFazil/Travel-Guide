@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(215, 185, 129);
+
+}
+
+
+.profile{
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: rgb(105, 156, 181);
+  text-align: center;
+  text-decoration: none;
+}
+
+a{
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-top: 80px;
+    text-decoration: none;
+    margin-left: 250px;
+    background-color: rgb(157, 92, 92);
+    
+}
+

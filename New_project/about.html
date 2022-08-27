@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width , inital scale =1.0">
+        <title>About us </title>
+        <link href="styleAbout.css" rel ="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet.css">
+        <link rel="stylesheet.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styleAboutNew.css">k
+
+    </head>
+    <body>
+        <div class ="header">
+            <nav>
+                <a href="index.html"><img src="images/AS (2).png" width="100px" height="70px"></a>
+                <div class="nav-links" id ="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="wrapper">
+                <h2 style="text-align:center">About Us</h2>
+                <p style="text-align:center">
+                  <span id=f1>"We travel</span>
+                  <br>
+                  <span id="f2">not to escape life</span> ,
+                  <br>
+                  <span id="f3">but for life</span>
+                  <br>
+                  <span id="f4"> not to escape us..</span>"
+                </p>
+              </div>
+                <br>
+                <br>
+                <span id="f2" style="margin-left: 38%;">Travel India through</span>
+                <br>
+                <a href="https://www.instagram.com/accounts/login/?next=/indiatravellife/">
+                    <img id="instaLogo" src="./backgroundImages/Instagram_logo.png" alt="instagram-square-brands" height="60rem">
+                </a> 
+        </div>
+
+            <!--Javascript for toggle Menu-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+    
+                function showMenu()
+                {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu()
+                {
+                    navLinks.style.left = "0";
+                }
+            </script>
+    </body>
+</html>
